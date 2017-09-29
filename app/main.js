@@ -6,6 +6,7 @@ var notification = document.getElementById('notification');
 var winnerMessage = document.getElementById('winnerMessage');
 var chocDesc = document.getElementById('chocDes');
 var myDiv = document.getElementById('myDIV');
+var chocDescA = document.getElementById('chocDesA');
 
 
 
@@ -20,11 +21,6 @@ function boringButton() {
 
 
 
-var regular = products["Regular Flavors"];
-
-  for (i = 0; i < regular.length; i++) {
-    // console.log(regular[i].name)
-  };
 
 
 
@@ -35,23 +31,40 @@ function myChoc() {
         chocDesc.style.display = 'none';
     }
 };
+function myChocA() {
+    if (chocDescA.style.display === 'none') {
+        chocDescA.style.display = 'block';
+    } else {
+        chocDescA.style.display = 'none';
+    }
+};
+
 
 // regf.innerHTML = 
 
-// chocDesc.innerHTML = regular[0].description
 
 
+var regular = products["Regular Flavors"];
 
-for (var key in regular ) {
+  for (i = 0; i < regular.length; i++) {
+    console.log(regular[i])
 
-    if (!regular.hasOwnProperty(regular)) continue;
+    
+  };
+  var regular1 = regular[i];
 
-    var obj = regular[key];
-    for (var prop in obj) {
-        if(!obj.hasOwnProperty(prop)) continue;
-        console.log(prop + " = " + obj[prop]);
-    }
+for (i = 0; i < regular1; i++){
+    console.log()
 }
+
+
+
+
+chocDesc.innerHTML = regular[0].description + " " + regular[0].price
+
+
+
+
 
 
 

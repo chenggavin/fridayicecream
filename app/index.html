@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navv" href="#">WELCOME</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active navv "><a href="#">ABOUT <span class="sr-only">(current)</span></a></li>
+        <li class ="navv"><a href="#">REWARDS</a></li>
+      
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 	<title>ICE CREAM</title>
 
   <!-- Latest compiled and minified CSS -->
@@ -14,7 +39,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -24,54 +49,50 @@
 
 
 <div id="title"> 
-	<h3> ICE CREAM SHOPP</h3>
+	<h1> ICE CREAM SHOP</h1>
+
 </div>
 
 
 
 
-<div class="container">
+ 
 
-  <div class="row">
-</div>
+<div id="mainButtons">
 
-<button onclick="boringButton()">Boring Flavors</button>
+<button onclick="boringButton()" class="btn btn-lg btn-warning">Boring Flavors</button>
+
+
 
 <div id="myDIV">
-  <button onclick="myChoc()" type="button" class="btn btn-default regf">Chocolate
-<div id="chocDes"></div>
 
+
+  <button onclick="myChoc()" type="button" class="btn btn-info regf">Chocolate
+<div id="chocDes"></div>
   </button>
-  <button type="button" class="btn btn-default regf">Strawberry</button>
+
+  <button onclick="myChocA()" type="button" class="btn btn-info regf">Vanilla
+<div id="chocDesA"></div>
+</button>
+
+  <button type="button" class="btn btn-info regf">Strawberry</button>
 <div id="chocDes"></div>
-  
-  <button type="button" class="btn btn-default regf">Vanilla</button>
+<div id="myDIV">
+
 </div>
 
 <div id="chocDes"></div>
-<div id="regularFlavors" class="col">
-</div>
-
-
-
-
-
-    <div class="col">Not so boring Flavos</div>
-
-
-
-    <div class="w-100"></div>
-
-
-    <div class="col">extra stuff </div>
-
-
-
-    <div class="col">cup or cone</div>
-  </div>
-
 
 </div>
+
+
+
+ <button  class="btn btn-warning btn-lg">Not So Boring Flavors</button>
+
+ <button  class="btn btn-warning btn-lg">Not Enough Sugar?</button>
+
+  <button  class="btn btn-warning btn-lg">Cup? Cone?</button>
+
 
 
 
@@ -89,6 +110,11 @@
 
 </div>
 
+
+<p>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	wasted most of my time confusing myself with javascript. sorry.
+</p>
 	<script src="menupage.js"></script>
  	<script src="main.js"></script>
 </body>

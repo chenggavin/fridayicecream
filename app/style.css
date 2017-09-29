@@ -5,3 +5,29 @@
 .unhidden {
 display:block;
 }
+
+#title {
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	color: #ff7473;
+	padding-top: 50px;
+}
+
+.service {
+	color: blue;
+}
+
+#mainButtons {
+	padding-top: 100px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+p {
+	text-align: center;
+}
+
+.navv{
+	font-family: 'Oswald', sans-serif;
+}

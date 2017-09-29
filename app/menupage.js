@@ -4,7 +4,7 @@ var products = {
   {
       "name": "Chocolate",
       "description": "Loved by kids of all ages!",
-      "price": "2.00"
+      "price": "$2.00"
     },
 
     {
