@@ -1,26 +1,15 @@
 var title = document.getElementById('title');
-var regularFlavors = document.getElementById('regularFlavors');
-
-var regf = document.getElementsByClassName('regf');
-var notification = document.getElementById('notification');
-var winnerMessage = document.getElementById('winnerMessage');
-var chocDesc = document.getElementById('chocDes');
-var myDiv = document.getElementById('myDIV');
-var chocDescA = document.getElementById('chocDesA');
 
 
 
-function boringButton() {
-    if (myDiv.style.display === 'none') {
-        myDiv.style.display = 'block';
-    } else {
-        myDiv.style.display = 'none';
-    }
+// function boringButton() {
+//     if (myDiv.style.display === 'none') {
+//         myDiv.style.display = 'block';
+//     } else {
+//         myDiv.style.display = 'none';
+//     }
 
-}
-
-
-
+// }
 
 
 
@@ -45,22 +34,78 @@ function myChocA() {
 
 
 var regular = products["Regular Flavors"];
+var regularFlavor;
+console.log("Regular: ", regular)
+for (i = 0; i <= regular.length; i++) {
+    regularFlavor = document.getElementById('reg-flavors' + (i + 1))
+    regularFlavor.innerHTML = 
+    '<span class="reg-flavors-name col-xs-12">' + regular[i].name + '</span>' + 
+    '<span class="reg-flavors-description col-xs-12">' + regular[i].description + '</span>' + 
+    '<span class="reg-flavors-price col-xs-12">' + regular[i].price + '</span>';
+};
 
-  for (i = 0; i < regular.length; i++) {
-    console.log(regular[i])
+   console.log(regular[0]);
 
+
+     var regular1 = regular[i];
+
+  function regFinder (){
+
+
+
+
+for (i = 0; i < regular.length; i++) {
+            for (j = 0; j < regular[i].length; j++) {
+                reg.innerHTML = "regular[i][0]"
+
+            };
+        }}
+
+
+
+//chocDesc.innerHTML = regular[0].description + " " + regular[0].price
+
+
+
+
+// var obj = {a: 1, b: 2, c: 3};
     
-  };
-  var regular1 = regular[i];
 
-for (i = 0; i < regular1; i++){
-    console.log()
-}
 
+// var reg = document.getElementById("reg");
+
+// reg.innerHTML = regular[0].name;
 
 
 
-chocDesc.innerHTML = regular[0].description + " " + regular[0].price
+
+// console.log(Object.keys(products));
+
+
+// for (i=0; i < regular[i].length; i++) {
+//  console.log(regular1[i])
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
