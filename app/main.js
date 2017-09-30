@@ -7,9 +7,9 @@ function buildMenu (columnName, className) {
     for (var i = 0; i < menuType.length; i++) {
         menuItem = document.getElementById(className + (i + 1));
         menuItem.innerHTML = 
-        '<span class="' + className + '-name col-xs-12">' + menuType[i].name + '</span>' +
-        '<span class="' + className + '-description col-xs-12">' + menuType[i].description + '</span>' +
-        '<span class="' + className + '-price col-xs-12">' + menuType[i].price + '</span>';
+        '<span class="' + className + '-name col-xs-12 name">' + menuType[i].name + '</span>' +
+        '<span class="' + className + '-description col-xs-12 description">' + menuType[i].description + '</span>' +
+        '<span class="' + className + '-price col-xs-12 price">' + menuType[i].price + '</span>';
     };
 };
 
